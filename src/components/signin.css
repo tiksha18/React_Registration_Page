@@ -1,78 +1,77 @@
+.showcase
+{
+    background-image: url("../images/bkgd-img.png");
+    height: 100vh;
+    background-size: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .register-page
 {
     display: flex;
-    width: 65%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 85px;
-    margin-left: 270px;
-    height: 500px;
-    border-radius: 50px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.70);
+    background: violet;
+    width: 77%;
+    height: 75%;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.30);
 }
 .left-side
 {
-    border-radius: 65px;
-    width: 40%;
+    background: white;
     display: flex;
-    height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    width: 37%;
     align-items: center;
+    justify-content: space-around;
 }
-
-.logo img{
-    height: 245px;
+.logo img
+{
+    height: 168px;
 }
-
-.si-truck-image img{
-    height: 165px;
+.truck img
+{
+    height: 112px;
 }
 .right-side
 {
-    background: darkgreen;
-    height: 100%;
-    width: 65%;
+    background: turquoise;
+    width: 63%;
+    background: #2B6350;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-radius: 50px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 1.60);
-}
-.si-create-account
-{
-    height: 28%;
-    width: 50%;
-    /* background: antiquewhite; */
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 8px;
 }
 .heading
 {
-    font-size: 40px;
-    font-weight: 800;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
 }
-
-.sifield
+.si-all-inputs
 {
-    height: 55px;
-    /* background: chocolate; */
-    width: 318px;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
 }
-.sifield input{
-    height: 40px;
-    width: 96%;
-    border-radius: 10px;
+.input-group
+{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
     font-size: 18px;
     padding: 4px;
-    font-family: cursive;
-    outline: none;
 }
-.button
+.btn
 {
     height: 50px;
     width: 110px;
@@ -84,9 +83,9 @@
     margin: 4px;
     border: none;
     transition: transform 0.3s;
-    font-family: 'Hina Mincho', serif;    
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.60);
 }
-.button:hover
+.btn:hover
 {
     border: 2px solid darkgreen; 
     border: none;
@@ -96,15 +95,50 @@
 }
 .info
 {
-    margin: 5px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
     color: white;
-    font-size: 20px;
 }
-.register a
+.sign-in a
 {
     color: white;
     text-decoration: none;
     font-weight: bolder;
     cursor: pointer;
     font-size: 20px;
+    height: 50%;
+    width: 100%;
+    
+}
+.si-rights
+{
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.input-group-text img
+{
+    height: 36px;
+    width: 40px;
+}
+.information
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+}
+.end-part
+{
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }

@@ -1,38 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './signin.css';
+import carruslogo from '../images/carruslogo.png'; 
+import truck from '../images/truck.png';
+import email from '../images/email1.png';
+import password from '../images/password1.png';
 
 
 const SignIn = () => {
     return (  
-        <div className="register-page">
-            
-            <div className="right-side">
-                <div className="heading">
-                    Sign In
-                </div>
-                <div className="si-create-account">
-                    <div className="email-field sifield">
-                        <input type="text" placeholder="Email" />
+        <React.Fragment>
+            <div className="showcase">
+                <div className="register-page">
+                    <div className="left-side">
+                        <div className="logo">
+                            <img src={carruslogo} alt="" />
+                        </div>
+                        <div className="truck">
+                            <img src={truck} alt="" />
+                        </div>
                     </div>
-                    
-                    <div className="password-field sifield">
-                        <input type="text" placeholder="Password" />
+                    <div className="right-side">
+                        <div className="heading">
+                            Welcome Back
+                        </div>
+
+                        <div className="si-all-inputs">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping" >  <img className="input-img" src={email} alt="" /> </span>
+                                <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="addon-wrapping" />
+                            </div>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping" >  <img className="input-img" src={password} alt="" /> </span>
+                                <input type="text" class="form-control" placeholder="password" aria-label="password" aria-describedby="addon-wrapping" />
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="btn btn-outline-success" >Log In</button>
+                        <div className="information">
+                            <div className="info">Don't have an Account ?</div>
+                            <div className="sign-in"> <Link to="/">SignUp</Link>  </div>
+                        </div>
+                        <div className="end-part">
+                            <div className="si-rights">Forgot Password ?</div>
+                        </div>
                     </div>
-                </div>
-                <button className="button">SignIn</button>
-                <div className="info">Don't have an Account ?</div>
-                <div className="register"> <Link to="/register">SignUp</Link>  </div>
+                </div>            
             </div>
-            <div className="left-side">
-                <div className="logo">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFlWIppryLKPA/company-logo_200_200/0/1608472694283?e=2159024400&v=beta&t=1CoQkNn9-h1zWLPreZiRplZHrZX_9mnVsZXpKwCN5uk" alt="" />
-                </div>
-                <div className="si-truck-image">
-                    <img src="https://cdn5.vectorstock.com/i/thumb-large/64/19/green-truck-isolated-icon-eco-fuel-electric-van-vector-30036419.jpg" alt="" />
-                </div>
-            </div>
-        </div>
+        </React.Fragment>
     );
 }
  
