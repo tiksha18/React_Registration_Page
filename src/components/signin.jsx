@@ -14,10 +14,10 @@ const SignIn = () => {
                 <div className="register-page">
                     <div className="left-side">
                         <div className="logo">
-                            <img src={carruslogo} alt="" />
+                            <img src={carruslogo} class="img-fluid" alt="..." />
                         </div>
                         <div className="truck">
-                            <img src={truck} alt="" />
+                            <img src={truck} class="img-fluid" alt="..." />
                         </div>
                     </div>
                     <div className="right-side">
