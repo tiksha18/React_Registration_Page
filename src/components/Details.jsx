@@ -5,6 +5,7 @@ import './Details.css';
 import aadharcard from '../images/aadhar.png';
 import pancard from '../images/pancard.png';
 import employeeID from '../images/employeeID.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,7 +43,7 @@ const Details = () => {
                         
                         </div>
                         
-                        <button type="button" class="btn btn-outline-success" > Next </button>
+                        <button type="button" class="btn btn-outline-success" > <Link to="/uploaddocuments"> Next </Link> </button>
                         
                         <div className="end-part">
                             <div className="rights">© All Rights Reserved</div>
